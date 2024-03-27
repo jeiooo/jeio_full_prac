@@ -1,0 +1,18 @@
+
+
+###get all
+GET http://localhost:3000/todo
+
+###post
+POST http://localhost:3000/todo/new
+Content-Type: application/json
+
+{
+    "text": "itepen gwapo"
+}
+
+###delete
+DELETE http://localhost:3000/todo/delete/6603bf9686004460ad15d213
+
+###getupdate
+GET http://localhost:3000/todo/complete/6603c129c73ec0697c2b793b
