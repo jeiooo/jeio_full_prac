@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 const url = 'mongodb://localhost:27017/full_prac';
 mongoose.connect(url, {})
@@ -10,7 +12,7 @@ mongoose.connect(url, {})
     .catch(err => console.log(error));
 
 const TodoRoute = require('./routes/todo.route');
-app.use(('/todo'), TodoRoute);
+app.use(('/todos'), TodoRoute);
 
 app.listen(3000, () => {
     console.log('Connected to Port 3000... ')

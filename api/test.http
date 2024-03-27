@@ -1,18 +1,18 @@
 
 
 ###get all
-GET http://localhost:3000/todo
+GET http://localhost:3000/todos
 
 ###post
-POST http://localhost:3000/todo/new
+POST http://localhost:3000/todos/new
 Content-Type: application/json
 
 {
-    "text": "itepen gwapo"
+    "text": "asdasd gwapo"
 }
 
 ###delete
-DELETE http://localhost:3000/todo/delete/6603bf9686004460ad15d213
+DELETE http://localhost:3000/todos/delete/6603d7bc11817a0560e54dfb
 
 ###getupdate
-GET http://localhost:3000/todo/complete/6603c129c73ec0697c2b793b
+GET http://localhost:3000/todos/complete/6603c129c73ec0697c2b793b
